@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>注意力注疏 · Attention Is All You Need 中文注疏本</title>
+<meta name="description" content="一本给初学者和高中数学读者看的《Attention Is All You Need》注疏本：补齐线性代数与 softmax，逐节对照原文精讲，每节配练习，并可用自己的 API 向 AI 助教提问与批改。">
+<meta name="theme-color" content="#E9E3D4">
+<link rel="icon" href="assets/img/seal.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到正文</a>
+
+<header class="topbar" id="topbar">
+  <div class="topbar__inner">
+    <a class="wordmark" href="#/" aria-label="Attention 注疏本 · 回到卷首">
+      <span class="wordmark__latin">Attention</span>
+      <span class="wordmark__cn">注疏本</span>
+    </a>
+    <nav class="nav" id="primary-nav" aria-label="卷目">
+      <a class="nav__link" href="#/primer" data-nav="primer"><i>卷一</i>基础</a>
+      <a class="nav__link" href="#/preview" data-nav="preview"><i>卷二</i>预习</a>
+      <a class="nav__link" href="#/paper" data-nav="paper"><i>卷三</i>原文</a>
+      <a class="nav__link" href="#/facsimile" data-nav="facsimile"><i>影印</i>原页</a>
+      <a class="nav__link" href="#/chat" data-nav="chat"><i>卷四</i>问学</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+      <span>卷目</span>
+    </button>
+  </div>
+  <div class="read-rail" aria-hidden="true"><span id="read-bar"></span></div>
+</header>
+
+<main id="main" tabindex="-1">
+  <noscript>
+    <div class="noscript">这本注疏需要 JavaScript 才能阅读。请在浏览器设置中启用 JavaScript。</div>
+  </noscript>
+</main>
+
+<footer class="footer" id="footer">
+  <div class="footer__inner">
+    <p class="footer__wordmark" aria-hidden="true">Attention<span>注疏本</span></p>
+    <div class="footer__cols">
+      <div class="footer__col">
+        <p class="footer__label">底本</p>
+        <p>Ashish Vaswani 等八人，<em>Attention Is All You Need</em>，2017。<br>
+        原载 <a href="https://arxiv.org/abs/1706.03762" rel="noopener">arXiv:1706.03762</a>，本站全文照录，不作改写。</p>
+        <p class="footer__fine">论文图表版权归原作者与 Google 所有，依 arXiv 非独占许可用于教学与学术展示。原文中的英文表述以底本为准；中文注疏为本站所撰，不代表原作者。</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__label">卷目</p>
+        <p class="footer__links">
+          <a href="#/primer">卷一 · 基础</a>
+          <a href="#/preview">卷二 · 预习</a>
+          <a href="#/paper">卷三 · 原文注疏</a>
+          <a href="#/facsimile">影印原页</a>
+          <a href="#/chat">卷四 · 问学</a>
+        </p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__label">制作</p>
+        <p>字体：EB Garamond、Cormorant Garamond、思源宋体（SIL Open Font License）。<br>
+        公式排版：KaTeX（MIT）。<br>
+        API 密钥只保存在你的浏览器本地，不会发往本站之外的任何服务器——请求直接由你的浏览器发往你填写的接口。</p>
+        <p class="footer__fine">底本影印页由 arXiv 公开 PDF 生成，仅供对照阅读。</p>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>2026 · 注疏本</span>
+      <a href="#/paper/abstract">从摘要读起</a>
+      <a href="#/" class="footer__top">回到卷首 ↑</a>
+    </div>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="影印原页">
+  <div class="lightbox__bar">
+    <p class="lightbox__title" id="lightbox-title">影印原页</p>
+    <button class="lightbox__close" type="button" data-close-lightbox aria-label="关闭">关闭</button>
+  </div>
+  <div class="lightbox__body">
+    <img id="lightbox-img" src="assets/img/seal.svg" alt="" hidden>
+  </div>
+</dialog>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script defer src="assets/vendor/katex/katex.min.js"></script>
+<script defer src="data/paper.js"></script>
+<script defer src="data/primer-1.js"></script>
+<script defer src="data/primer-2.js"></script>
+<script defer src="data/preview.js"></script>
+<script defer src="data/notes-a.js"></script>
+<script defer src="data/notes-b.js"></script>
+<script defer src="data/notes-c.js"></script>
+<script defer src="data/notes-d.js"></script>
+<script defer src="assets/js/markdown.js"></script>
+<script defer src="assets/js/api.js"></script>
+<script defer src="assets/js/widgets.js"></script>
+<script defer src="assets/js/chat.js"></script>
+<script defer src="assets/js/app.js"></script>
+</body>
+</html>

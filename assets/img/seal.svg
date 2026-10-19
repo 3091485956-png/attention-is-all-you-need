@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="注">
+  <rect width="64" height="64" fill="#8B2F24"/>
+  <rect x="5" y="5" width="54" height="54" fill="none" stroke="#F6F1E1" stroke-width="1.5" opacity="0.55"/>
+  <text x="32" y="45" text-anchor="middle" font-family="'Noto Serif SC','Songti SC','SimSun',serif" font-size="34" fill="#F6F1E1">注</text>
+</svg>
